@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ember Run — Volcano Rescue Flight</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #1a1218; }
+  #game { position: fixed; top: 0; left: 50%; transform: translateX(-50%); display: block; touch-action: none; }
+  /* Read aloud, never shown: the status line screen readers announce. */
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<canvas id="game" aria-label="Ember Run: fly the rescue plane through the golden rings over the volcano islands and land at Meridian Field"></canvas>
+<p id="status" role="status" aria-live="polite"></p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
